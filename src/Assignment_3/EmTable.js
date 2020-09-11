@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import Form from "./Form";
 import Button from "@material-ui/core/Button";
+import { Container } from "@material-ui/core";
 
 export class EmTable extends Component {
   state = {
@@ -13,6 +14,11 @@ export class EmTable extends Component {
     this.state.eList.push(eObject);
     this.setState(this.state.eList);
   };
+  removeBtn = (eIndex) => {
+    const emp = this.state.eList;
+    emp.splice(eIndex, 1);
+    this.setState({ emp: emp });
+  };
 
   renderEmp = (employee, index) => {
     return (
@@ -21,7 +27,11 @@ export class EmTable extends Component {
         <td>{employee.employeeJob}</td>
         <td>
           {
-            <Button variant="contained" color="secondary">
+            <Button
+              variant="contained"
+              color="secondary"
+              onClick={this.removeBtn.bind(this, index)}
+            >
               Remove
             </Button>
           }
@@ -34,10 +44,12 @@ export class EmTable extends Component {
     return (
       <div>
         <Form />
-        <Button variant="contained" color="primary" onClick={this.submitBtn}>
-          Submit
-        </Button>
-        <table class="table">
+        <Container component="main" maxWidth="xs">
+          <Button variant="contained" color="primary" onClick={this.submitBtn}>
+            Submit
+          </Button>
+        </Container>
+        <table className="table">
           <thead>
             <tr>
               <th>Name</th>

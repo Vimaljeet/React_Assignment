@@ -3,7 +3,7 @@ import "./aTableStyle.css";
 
 const employee = () => {
   return (
-    <table class="table">
+    <table className="table">
       <thead>
         <tr>
           <th>Name</th>
