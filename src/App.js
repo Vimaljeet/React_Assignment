@@ -9,6 +9,7 @@ import Calc from "./Assignment_4/Calc";
 import KeypadCom from "./Assignment_4/KeypadCom";
 import Clock from "./Assignment_5/Clock";
 import Navigation from "./Assignment_6/Navigation";
+import Header from "./Assignment_7/Header";
 
 class App extends Component {
   constructor() {
@@ -69,20 +70,36 @@ class App extends Component {
       <div className="App">
         <h1 className="Text-header">ASSIGNMENT 1</h1>
         <Hello />
+        <br></br>
+        <br></br>
         <h1 className="Text-header">ASSIGNMENT 2</h1>
         <Atable />
+        <br></br>
+        <br></br>
         <h1 className="Text-header">ASSIGNMENT 3</h1>
         <EmTable />
+        <br></br>
+        <br></br>
         <h1 className="Text-header">ASSIGNMENT 4</h1>
         <div className="calculator-body">
           <h1>Simple Calculator</h1>
           <Calc result={this.state.result} />
           <KeypadCom onClick={this.onClick} />
         </div>
+        <br></br>
+        <br></br>
         <h1 className="Text-header">ASSIGNMENT 5</h1>
         <Clock />
+        <br></br>
+        <br></br>
         <h1 className="Text-header">ASSIGNMENT 6</h1>
         <Navigation />
+        <br></br>
+        <br></br>
+        <h1 className="Text-header">ASSIGNMENT 7</h1>
+        <Header />
+        <br></br>
+        <br></br>
       </div>
     );
   }
