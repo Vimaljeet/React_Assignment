@@ -1,0 +1,48 @@
+#clockheader {
+  background-color: rgb(245, 245, 245);
+  width: 300px;
+  border: 1px solid none;
+  margin: auto;
+  margin-top: 20px;
+}
+#dgText {
+  background-color: #343a40;
+  width: matchparent;
+  height: 50px;
+  text-align: center;
+  padding-top: 10px;
+  border: 5px solid none;
+}
+#ClockDiv {
+  border: 10px solid none;
+}
+#roundclock {
+  width: 150px;
+  height: 150px;
+  border: 10px solid black;
+  margin: auto;
+  border-radius: 100%;
+  background: #282c34;
+  text-align: center;
+}
+h2 {
+  color: #fff;
+}
+h3 {
+  color: #61dafb;
+  padding: 15px;
+  padding-top: 50px;
+}
+h5 {
+  color: #61dafb;
+}
+#togglediv {
+  align-items: center;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+#hide {
+  display: none;
+  margin-top: 3px;
+}

@@ -1,11 +1,14 @@
-import React from "react";
+import React, { Component } from "react";
 
-function Calc() {
-  return (
-    <div>
-      <h1>Simple Calculator App</h1>
-    </div>
-  );
+class Calc extends Component {
+  render() {
+    let { result } = this.props;
+    return (
+      <div className="result">
+        <p>{result}</p>
+      </div>
+    );
+  }
 }
 
 export default Calc;
